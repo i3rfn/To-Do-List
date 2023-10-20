@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: poppins;
+  src: url(../media/Poppins-Regular_2.woff);
+}
+@font-face {
+  font-family: yekan;
+  src: url(../media/iranyekan.woff);
+}
+body {
+  background-color: #395b64;
+}
+.modal {
+  width: 500px;
+  height: 180px;
+  background-color: #2c3333;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: right;
+  font-family: yekan;
+  font-size: 14px;
+  padding: 20px;
+  float: right;
+  position: relative;
+  border-radius: 8px 0 0 8px;
+  user-select: none;
+  box-shadow: 1px 1px 1px black;
+}
+#close {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  box-shadow: 1px 1px 1px black;
+}
+#close:hover {
+  scale: 1.1;
+  background-color: red;
+}
+.container {
+  width: 40%;
+  height: 580px;
+  margin: 80px auto;
+  background-color: #2c3333;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.dt {
+  width: 100%;
+  height: 60px;
+  background-color: #a5c9ca;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+#date {
+  width: 70%;
+  height: 60px;
+  background-color: #a5c9ca;
+  border-radius: 8px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: poppins;
+  font-size: 16px;
+}
+
+#time {
+  width: 30%;
+  height: 60px;
+  background-color: #a5c9ca;
+  border-radius: 0 8px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0.1px solid #2c3333;
+  font-family: poppins;
+  font-size: 16px;
+}
+.input {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+}
+#user-input {
+  width: 75%;
+  height: 40px;
+  border-radius: 8px;
+  border: 3px solid #a5c9ca;
+  outline: unset;
+  line-height: 40px;
+  font-family: yekan;
+  font-size: 14px;
+  padding: 0 10px;
+  background-color: rgb(250, 250, 250);
+}
+button#btn {
+  width: 70px;
+  height: 40px;
+  border-radius: 8px;
+  border: 3px solid #a5c9ca;
+  outline: unset;
+  background-color: rgb(250, 250, 250);
+  font-family: yekan;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+button#btn:hover {
+  background-color: #025f70;
+  color: white;
+  scale: 1.1;
+  font-size: 16px;
+}
+.items {
+  width: 90%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+li {
+  list-style: none;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  border: 2px solid #a5c9ca;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all 100ms linear;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: yekan;
+  position: relative;
+  user-select: none;
+  background-color: #025f70;
+}
+li:hover {
+  background: #05a4c0;
+}
+
+li > button {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 15px;
+  bottom: 6px;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+
+li > button:nth-of-type(2) {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 50px;
+  bottom: 6px;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+li > button:nth-of-type(3) {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 50px;
+  bottom: 6px;
+  display: none;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+button:hover {
+  scale: 1.3;
+}
+
+.done {
+  background: transparent;
+  color: rgb(206, 206, 206);
+  border: 4px solid #a5c9ca;
+  text-decoration: line-through;
+}
+
+.delete {
+  display: none;
+}
+
+p.ds {
+  width: 100%;
+  margin-top: -20px;
+  padding-left: 15px;
+  font-family: poppins;
+  font-size: 10px;
+  text-align: center;
+  user-select: none;
+}
+p.ds:hover {
+  font-weight: bold;
+}

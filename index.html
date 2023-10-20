@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div dir="rtl" class="modal">
+      <div id="close">❌</div>
+      <p>راهنما :</p>
+      <p>کار های خود را داخل ورودی وارد کنید تا به لیست کارها اضافه شود.</p>
+      <p>بعد از انجام هر کار روی آیکون تیک کلیک کنید.</p>
+      <p>برای حذف آنها روی آیکون سطل زباله کلیک کنید.</p>
+    </div>
+    <div class="container">
+      <div class="dt">
+        <div id="date"></div>
+        <div id="time"></div>
+      </div>
+      <div dir="rtl" class="input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="تسک جدید خود را وارد کنید..."
+          minlength="1"
+          maxlength="30"
+        />
+        <button id="btn">ثبت</button>
+      </div>
+      <div dir="rtl" class="items">
+        <ul></ul>
+      </div>
+    </div>
+    <p class="ds">"Designed by Erfan Qane"</p>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
